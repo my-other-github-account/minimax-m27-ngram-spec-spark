@@ -42,7 +42,7 @@ ENV LIBRARY_PATH=/usr/local/cuda/lib64/stubs:${LIBRARY_PATH:-}
 RUN cd /opt/llama.cpp && \
     cmake -B build-cuda \
       -DGGML_CUDA=ON \
-      -DCMAKE_CUDA_ARCHITECTURES=120 \
+      -DCMAKE_CUDA_ARCHITECTURES=121 \
       -DGGML_NATIVE=OFF \
       -DLLAMA_BUILD_TESTS=OFF \
       -DLLAMA_BUILD_EXAMPLES=ON \
